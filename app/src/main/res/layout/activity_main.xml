@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5e1b0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Sparks Foundation Internship June2021"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:id="@+id/card_view"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_below="@id/tv_title"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="LOGIN"
+                android:textColor="#ff6879"
+                android:textSize="35dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/fb" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/google" />
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="false"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="90dp" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook_login"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="430dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginBottom="30dp"
+                android:background="#3B5998"
+                android:onClick="onClick"
+                android:paddingLeft="10dp"
+                android:text="Sign in with Facebook"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Made by Mosami Patel"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

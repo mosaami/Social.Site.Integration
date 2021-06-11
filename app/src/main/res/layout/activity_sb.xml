@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/lib/com.thoughtworks.retailshop.util"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginTop="0dp"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/pro_txt"
+            android:src="@drawable/fb" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo1_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/pro_txt"
+            android:src="@drawable/google" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pro_txt"
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_alignBottom="@+id/logo_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:shadowColor="#000"
+            android:shadowDx="2"
+            android:gravity="center"
+            android:shadowDy="2"
+            android:shadowRadius="1.0"
+            android:text="Social Site Integration"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            font:ttf_name="paranoid.ttf" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
